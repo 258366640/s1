@@ -5,6 +5,6 @@ mod server;
 use server::Server;
 
 fn main() {
-    let server = Server::new("localhost:3000");
+    let server = Server::new("localhost:9000");
     server.run();
 }

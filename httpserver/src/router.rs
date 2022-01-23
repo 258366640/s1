@@ -16,7 +16,7 @@ impl Router {
                             let _ = resp.send_response(stream);
                         }
                         _ => {
-                            let resp: HttpResponse = StaticPageHandler::handler(&req);
+                            let resp: HttpResponse = StaticPageHandler::handle(&req);
                             let _ = resp.send_response(stream);
                         }
                     }
